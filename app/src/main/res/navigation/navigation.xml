@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaPropriedadesFragment">
+
+    <fragment
+        android:id="@+id/listaPropriedadesFragment"
+        android:name="com.example.app.ui.propriedades.ListaPropriedadesFragment"
+        android:label="Propriedades">
+        <action
+            android:id="@+id/action_listaPropriedadesFragment_to_detalhePropriedadeFragment"
+            app:destination="@id/detalhePropriedadeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalhePropriedadeFragment"
+        android:name="com.example.app.ui.propriedades.DetalhePropriedadeFragment"
+        android:label="Detalhes da Propriedade" />
+
+    <fragment
+        android:id="@+id/listaInquilinosFragment"
+        android:name="com.example.app.ui.inquilinos.ListaInquilinosFragment"
+        android:label="Inquilinos" />
+
+    <!-- Adicione outros fragments se desejar navegar diretamente via navigation.xml -->
+</navigation>

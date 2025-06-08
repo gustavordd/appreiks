@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/listaPropriedadesFragment"
+        android:title="Propriedades"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/listaInquilinosFragment"
+        android:title="Inquilinos"
+        android:icon="@drawable/ic_person" />
+</menu>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Título da Tarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título da tarefa"/>
+
+    <TextView
+        android:text="Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecione a data"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecione a hora"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="Observações"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edtObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Observações da tarefa"/>
+</LinearLayout>

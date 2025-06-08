@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Contêiner com borda circular -->
+    <FrameLayout
+        android:id="@+id/fotoPerfilContainer"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borda_circular"
+        android:layout_marginStart="8dp">
+
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            android:contentDescription="Foto de perfil"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true" />
+    </FrameLayout>
+
+    <!-- Nome e botão editar lado a lado -->
+    <LinearLayout
+        android:id="@+id/layoutSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fotoPerfilContainer"
+        android:layout_alignTop="@id/fotoPerfilContainer"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtNomeAdministrador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Olá,Usuário"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <ImageView
+            android:id="@+id/btnEditarPerfil"
+            android:layout_width="29dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:alpha="0.6"
+            android:clickable="true"
+            android:contentDescription="Editar Perfil"
+            android:focusable="true"
+            android:src="@drawable/edit" />
+    </LinearLayout>
+
+    <!-- Título centralizado -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fotoPerfilContainer"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botões -->
+    <LinearLayout
+        android:id="@+id/botoesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnPropriedades"
+            android:text="Propriedades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnInquilinos"
+            android:text="Inquilinos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</RelativeLayout>

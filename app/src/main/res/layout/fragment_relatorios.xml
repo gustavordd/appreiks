@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Botão para exibir o faturamento -->
+
+
+    <Button
+        android:id="@+id/btnExibirFaturamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Exibir Relatório" />
+
+    <!-- TextView para mostrar o faturamento -->
+    <TextView
+        android:id="@+id/txtFaturamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faturamento: R$ 0,00"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"/>
+
+    <!-- TextView para mostrar o lucro -->
+    <TextView
+        android:id="@+id/txtLucro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lucro: R$ 0,00"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"/>
+
+</LinearLayout>
